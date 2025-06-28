@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.PathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
@@ -20,7 +21,7 @@ public class FileController {
     public ResponseEntity<Resource> downloadFile()
             throws Exception {
         Path path = Path.of("src/main/resources/static/files/asukahomma_resume.pdf");
-        Resource resource = new PathResource(path);
+        Resource resource = new ClassPathResource("static/files/asukahomma_resume.pdf");
         return ResponseEntity.ok()
                 .contentType(getContentType(path))
                 .contentLength(resource.contentLength())
