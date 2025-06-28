@@ -1,0 +1,644 @@
+body {
+  font-family: __Inter_d65c78, __Inter_Fallback_d65c78;
+  font-size: 14px;
+  /* line-height: 1.8; */
+  letter-spacing: .8px;
+  color: #fff;
+}
+
+.content {
+	background-color: #096e77;
+}
+
+a {
+  transition: opacity .3s;
+  text-decoration: none;
+  color: #16cec5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  border-style: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.pc-only {
+  display: block;
+}
+
+.sp-only {
+  display: none;
+}
+
+/*--------------------------------
+ layout
+---------------------------------*/
+.section {
+  padding: 100px 0;
+}
+
+.inner {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/*--------------------------------
+ title
+---------------------------------*/
+.title {
+  font-size: 34px;
+  line-height: 1;
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: .1em;
+  color: #fff;
+}
+
+.lead {
+  margin-bottom: 30px;
+}
+
+/*--------------------------------
+ header
+---------------------------------*/
+.header {
+  padding-top:20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  text-align: center;
+}
+
+.header-inner {
+  padding: 0 40px;
+}
+
+.header-greeting {
+  font-family:"Noto Sans Arabic", serif;
+  font-size: 65px;
+  font-weight : bold;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #F89880;
+  animation-name: textanime;
+  animation-duration:5s;/*再生時間*/
+  animation-iteration-count:1;/*繰り返し*/
+}
+
+@keyframes textanime
+{
+ 0%{
+  opacity: 0;
+ }
+
+ 100%{
+  opacity: 1;
+ }
+}
+
+.header-title {
+  font-family:"__Inter_d65c78, __Inter_Fallback_d65c78";
+  font-weight : bold;
+  font-size: 72px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.header-subtitle {
+  font-family: "__Inter_d65c78, __Inter_Fallback_d65c78";
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: .08em;
+  color: #ffffff;
+}
+
+/*--------------------------------
+ sub header
+---------------------------------*/
+.sub-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0 10px;
+  text-align: center;
+}
+
+.sub-header-inner {
+  padding: 0 40px;
+}
+
+.sub-header-title {
+  font-family: __Inter_d65c78, __Inter_Fallback_d65c78;
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 5px;
+  color: #f5b5d5;
+}
+.sub-header-subtitle {
+  font-family: __Inter_d65c78, __Inter_Fallback_d65c78;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: .08em;
+  color: #333;
+}
+
+/*--------------------------------
+ global navi
+---------------------------------*/
+.gnav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #196e77;
+}
+
+.gnav-inner {
+  padding: 15px 40px;
+}
+
+.gnav-list {
+  display: flex;
+  justify-content: center;
+}
+
+.gnav-item {
+  margin: 0 20px;
+}
+
+.gnav-item a {
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  display: inline-block;
+  padding: 7px 10px;
+  transition: .3s;
+  letter-spacing: .05em;
+  color: #ffe3cd;
+  border-top: 2px solid #ffe3cd;
+  border-right: 2px solid #ffe3cd;
+  border-bottom: 2px solid #ffe3cd;
+  border-left: 2px solid #ffe3cd;
+  border-radius: 100vh;
+  
+}
+
+.gnav-item a:hover {
+  /* opacity: .8; */
+  background-color: #ffe3cd;
+  color: #096e77;
+}
+
+.space {
+	height:15vh;
+}
+
+/*--------------------------------
+ Works
+---------------------------------*/
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.works-item {
+  width: 400px;
+  height: 450px;
+  display:inline-block;
+  margin-bottom: 40px;
+  color: black;
+  background-color:#99ccc0;
+  border-radius:20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor:pointer;
+}
+
+.works-img {
+	width: 100%;
+	height:50%;
+	display:inline-block;
+}
+
+.works-item:hover {
+  opacity: .8;
+  transition: opacity 0.3s ease;
+}
+
+.works-img img {
+  border-radius:20px 20px 0 0;
+  display:inline-block;
+  border: 1px solid #99ccc0;
+  width: 100%;
+  height: 100%;
+  text-align:center;
+  object-fit: cover; 
+  background-color:white;
+}
+.works-info{
+	overflow: hidden;
+	display:inline-block;
+	height:50%;
+	padding-left:10px;
+	padding-right:5px;
+	padding-bottom:5px;
+}
+
+.works-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  color:#096e77;
+}
+
+.works-summary {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/*--------------------------------
+ Skill
+---------------------------------*/
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill-item {
+  border-radius:10px;
+  display: flex;
+  justify-content: center;
+  width: 350px;
+  margin-bottom: 30px;
+  background-color:#99ccc0;
+  padding : 16px;
+  align-items: center;
+  margin-right: 20px;
+  margin-left:20px;
+}
+
+ .skill-item svg{
+    width:30px;
+    height:30px;
+    margin-left:5px;
+    margin-right: 16px;
+  }
+  
+.skill-name {
+  flex: 1;
+  font-size:18px;
+}
+
+/*--------------------------------
+ About
+---------------------------------*/
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  /*max-width: 800px;*/
+  margin: 0 auto;
+}
+.profile-img {
+  max-width: 270px;
+  margin-right: 30px;
+  border-radius: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.profile-img img {
+  border-radius: 50%;
+  object-fit: cover; 
+  
+}
+.profile-body {
+  flex: 1;
+  line-height: 1.8;
+  padding: 0 15px;
+  max-width : 100%;
+  font-size:16px;
+  margin: auto;
+}
+.profile-body p {
+  margin-bottom: 20px;
+}
+
+.profile-body button {
+    background: #99ccc0;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 260px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+.profile-body button:hover {
+  opacity: .8;
+  transition: opacity 0.3s ease;
+}
+
+/*--------------------------------
+ Contact
+---------------------------------*/
+.contact {
+  text-align: center;
+  font-size: 15px;
+}
+
+.contact-list {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-item {
+  display:inline-block;
+  width:300px;
+  margin-right:50px;
+  margin-left:50px;
+  margin-bottom:40px;
+}
+
+.contact-item svg {
+	width: 50px;
+    height: 50px;
+    color: #ffe3cd;
+}
+
+.contact-text {
+  margin-top: 10px;
+}
+/*--------------------------------
+ page top
+---------------------------------*/
+.page-top {
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #ffe3cd;
+}
+
+.page-top .material-icons-outlined {
+  vertical-align: bottom;
+  color: #096e77;;
+}
+
+/*--------------------------------
+ footer
+---------------------------------*/
+.footer {
+  padding: 30px;
+  background-color: #096e77;
+}
+
+.copyright {
+  font-size: 10px;
+  text-align: center;
+  color: #ffe3cd;
+}
+
+/*--------------------------------
+ works-item-detail
+---------------------------------*/
+.works-item-detail {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 240, 1);
+  width: 70%;
+  height: 80%;
+  z-index: 100;
+  overflow: auto;
+  padding: 20px;
+  color: black;
+}
+
+.article-title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 20px;
+}
+
+span.period {
+	font-size:16px;
+}
+
+.article-img {
+  margin-bottom: 20px;
+}
+
+.article-info-title {
+  font-size: 18px;
+}
+
+.article-body img {
+  margin-bottom: 30px;
+}
+
+.article-body p {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.home-link {
+  text-align: center;
+}
+
+
+/*media Queries 1340
+----------------------------------------------------*/
+@media screen and (max-width: 1340px) {
+  
+  .works-list::after{
+    content:"";
+    display: block;
+    width: 400px;
+    margin-left:10px;
+    margin-right:10px;
+  }
+  
+  .contact-item {
+    width:250px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+/*media Queries 950
+----------------------------------------------------*/
+@media screen and (max-width: 950px) {
+  .contact-item {
+    width:200px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+/*media Queries 767
+----------------------------------------------------*/
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .pc-only {
+    display: none;
+  }
+
+  .sp-only {
+    display: block;
+  }
+
+  .title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .inner {
+    padding: 0 20px;
+  }
+
+  .header {
+    height: 60vh;
+  }
+
+  .header-inner {
+    padding: 0 20px;
+  }
+  
+  .header-greeting {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+
+  .header-title {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  .header-subtitle {
+    font-size: 18px;
+  }
+
+  .sub-header-inner {
+    padding: 0 40px;
+  }
+
+  .sub-header-title {
+    font-family: __Inter_d65c78, __Inter_Fallback_d65c78;
+    font-size: 24px;
+  }
+  .sub-header-subtitle {
+    font-size: 14px;
+  }
+
+  .gnav .inner {
+    padding: 15px;
+  }
+
+  .gnav-logo {
+    font-size: 15px;
+  }
+
+  .gnav-item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .gnav-item {
+    margin: 0 5px;
+  }
+  .gnav-item a {
+    font-size: 12px;
+  }
+
+  .gnav-item a:after {
+    display: none;
+  }
+
+  /* Works */
+  .works-list {
+    justify-content: center;
+  }
+
+  .works-item {
+    width: 400px;
+    height: 450px;
+    margin-bottom: 30px;
+  }
+
+  /* Skill */
+  .skill-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .skill-item {
+    width: 350px;
+    margin-bottom: 30px;
+  }
+  
+  .skill-item svg{
+    width:26px;
+    height:26px;
+  }
+
+  /* About */
+  .profile {
+    display: block;
+  }
+  .profile-img {
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
+  .profile-body p:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  /* Contacts */
+  .contact {
+    font-size:15px;  
+  }
+  
+  .contact-item {
+    width: 500px;
+    
+  }
+  
+  .contact-item svg{
+    width: 30px;
+    height: 30px;
+  }
+  
+  .footer {
+    padding: 20px;
+  }
+
+  .article {
+    padding: 30px 0;
+  }
+}
