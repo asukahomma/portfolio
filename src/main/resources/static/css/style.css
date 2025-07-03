@@ -246,12 +246,13 @@ li {
   background-color:white;
 }
 .works-info{
-	overflow: hidden;
+	overflow: auto;
 	display:inline-block;
 	height:50%;
 	padding-left:10px;
 	padding-right:5px;
 	padding-bottom:5px;
+	
 }
 
 .works-name {
