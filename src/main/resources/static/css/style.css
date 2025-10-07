@@ -302,6 +302,15 @@ li {
   font-size:18px;
 }
 
+.skill-name-link {
+  text-decoration: none; 
+  color: inherit;
+}
+
+.skill-name-link:hover {
+  color:#096e77; 
+}
+
 /*--------------------------------
  About
 ---------------------------------*/
